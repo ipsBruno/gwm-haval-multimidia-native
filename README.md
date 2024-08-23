@@ -6,7 +6,10 @@ Accessing the Haval H6 GT vehicle's operating system from GWM, I found the follo
 
 This will be useful for security researchers to update their tools and for professional engineers to debug GWM's code and development your own app.
 
-```bash
+
+
+## df
+```
 :/data # df                                                                                                                                                                                  
 Filesystem                           1K-blocks    Used Available Use% Mounted on
 /dev/root                              4063212 3039532   1023680  75% /
@@ -30,7 +33,7 @@ tmpfs                                    10240       0     10240   0% /data/ramf
 192.168.118.2:/bvims                   1048576   33600   1014976   4% /data/nfs/nfs_bvims
 192.168.118.2:/dvr1                    1033088 1023168      9920 100% /data/nfs/nfs_dvr1
 ```
-
+## getprop
 ```
 1|:/data # getprop
 [DEVICE_PROVISIONED]: [1]
@@ -1274,7 +1277,7 @@ tmpfs                                    10240       0     10240   0% /data/ramf
 
 ```
 
-ifconfig
+## ifconfig
 ```
 :/mnt/vendor/persist # ifconfig
 vlan11    Link encap:Ethernet  HWaddr 02:47:57:4d:00:99
@@ -1380,7 +1383,7 @@ vlan13    Link encap:Ethernet  HWaddr 02:47:57:4d:00:99
 ```
 
 
-netstat
+##netstat
 
 ```
 :/mnt/vendor/persist # busybox netstat
@@ -1936,7 +1939,7 @@ unix  2      [ ]         DGRAM                     18092
 
 
 
-netstat services
+## netstat services
 ```
 :/mnt/vendor/persist #   netstat -plnt
 Active Internet connections (only servers)
@@ -2034,4 +2037,6 @@ tcp6       0      0 ::ffff:127.0.0.1:22530  ::ffff:127.0.0.1:33942  ESTABLISHED 
 tcp6       0      0 ::ffff:127.0.0.1:45606  ::ffff:127.0.0.1:22559  ESTABLISHED 4719/com.neusoft.na.navigation:Service
 
 ```
-Thank you.
+
+
+# Thank you.
