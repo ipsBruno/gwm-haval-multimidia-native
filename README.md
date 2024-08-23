@@ -1,4 +1,4 @@
-# gwm-haval-h6-gt-multimidia-native-apks 👀
+# gwm-haval-h6-gt-multimidia-native 👀
 
 
 Accessing the Haval H6 GT vehicle's operating system from GWM, I found the following secrets configs from mycar:
